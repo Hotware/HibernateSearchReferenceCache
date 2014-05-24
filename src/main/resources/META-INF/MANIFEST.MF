@@ -1,0 +1,1 @@
+premain-Class: de.hotware.hibernate.search.extension.reference.bytecode.ReferenceCacheAgent
