@@ -9,6 +9,13 @@ import java.lang.annotation.ElementType;
 @Target(ElementType.TYPE)
 public @interface ReferenceCached {
 
+	CacheType cacheType();
+	
 	int cacheSize();
+	
+	public static enum CacheType {
+		LRU_HASHMAP,
+		EHCACHE
+	}
 
 }
